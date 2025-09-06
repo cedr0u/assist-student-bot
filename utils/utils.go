@@ -19,4 +19,6 @@ var (
 			Description: "Renvoie le lien vers le code source du bot Discord.",
 		},
 	}
+
+	DefaultEmbedColor = 0x467987
 )

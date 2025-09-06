@@ -23,7 +23,7 @@ func Automod(discord *discordgo.Session, msg *discordgo.MessageCreate) {
 				Embed: &discordgo.MessageEmbed{
 					Title:       ":warning: // Modération Automatique",
 					Description: "Il se trouve que tu as envoyé un message potentiellement risqué. En effet, tu as dit quelque chose qui est susceptible de créer des tensions. Ce sont des choses à éviter pour la bonne entente avec tout le monde.",
-					Color:       0x467987,
+					Color:       utils.DefaultEmbedColor,
 					Footer: &discordgo.MessageEmbedFooter{
 						Text: "Assistant Étudiants, v1.0 - GOLANG ❤️",
 					},

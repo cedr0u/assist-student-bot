@@ -31,6 +31,8 @@ func main() {
 
 	discord.AddHandler(handlers.Automod)
 	discord.AddHandler(commands.HelpCommand)
+	discord.AddHandler(commands.UWUCommand)
+	discord.AddHandler(commands.SourceCodeCommand)
 
 	/* Enregister les commandes */
 	for _, value := range utils.Commands {
@@ -57,6 +59,7 @@ func main() {
 }
 
 // Enregister dans la liste BannedExpressions l'entièreté des expressions bannies contenues dans le fichier "banned-expressions".
+
 func setupBannedExpressions() {
 
 	data, err := os.ReadFile("banned-expressions")
@@ -65,7 +68,7 @@ func setupBannedExpressions() {
 	}
 
 	for _, line := range strings.Split(string(data), "\n") {
-		line = strings.TrimSpace(line)                  // Ca c'est pour éviter les problèems inutiles avec les espaces et les tabulations
+		line = strings.TrimSpace(line)                  // Ca c'est our éviter les problèmes inutiles avec les espaces et les tabulations
 		if line == "" || strings.HasPrefix(line, "#") { // Si la ligne est vide ou qu'elle débute par # on ignore
 			continue
 		}
