@@ -30,11 +30,6 @@ func HelpCommand(discord *discordgo.Session, i *discordgo.InteractionCreate) {
 						Footer: &discordgo.MessageEmbedFooter{
 							Text: "Assistant Étudiants, v1.0 - GOLANG ❤️",
 						},
-						Image:     nil,
-						Thumbnail: nil,
-						Video:     nil,
-						Provider:  nil,
-						Author:    nil,
 						Fields: []*discordgo.MessageEmbedField{
 							{
 								Name:   "Commandes",
