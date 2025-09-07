@@ -28,5 +28,8 @@ go.work.sum
 .env
 
 # Editor/IDE
-# .idea/
+#.idea/
 # .vscode/
+
+banned-expressions
+ADECal.ics

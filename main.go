@@ -33,6 +33,7 @@ func main() {
 	discord.AddHandler(commands.HelpCommand)
 	discord.AddHandler(commands.UWUCommand)
 	discord.AddHandler(commands.SourceCodeCommand)
+	discord.AddHandler(commands.NextCourseCommand)
 
 	/* Enregister les commandes */
 	for _, value := range utils.Commands {

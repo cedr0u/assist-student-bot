@@ -18,6 +18,10 @@ var (
 			Name:        "sourcecode",
 			Description: "Renvoie le lien vers le code source du bot Discord.",
 		},
+		{
+			Name:        "prochaincours",
+			Description: "Envoie le prochain cours (ne prend pas en compte les changements d'horaires)",
+		},
 	}
 
 	DefaultEmbedColor = 0x467987
